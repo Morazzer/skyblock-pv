@@ -6,6 +6,7 @@ import net.minecraft.world.item.Items
 import tech.thatgravyboat.skyblockapi.helpers.McScreen
 import tech.thatgravyboat.skyblockpv.api.data.SkyBlockProfile
 import tech.thatgravyboat.skyblockpv.screens.tabs.*
+import tech.thatgravyboat.skyblockpv.screens.tabs.fishing.TrophyFishingScreen
 import tech.thatgravyboat.skyblockpv.screens.tabs.inventory.BaseInventoryScreen
 import tech.thatgravyboat.skyblockpv.screens.tabs.inventory.InventoryScreen
 import tech.thatgravyboat.skyblockpv.utils.createSkull
@@ -23,6 +24,7 @@ enum class PvTabs(
     COLLECTION(CollectionScreen::class, Items.ITEM_FRAME.defaultInstance),
     MOB(MobScreen::class, Items.ZOMBIE_HEAD.defaultInstance),
     MINING(MiningScreen::class, Items.DIAMOND_PICKAXE.defaultInstance),
+    FISHING(TrophyFishingScreen::class, Items.FISHING_ROD.defaultInstance),
     ;
 
     constructor(screen: KClass<out BasePvScreen>, icon: ItemStack) : this(
